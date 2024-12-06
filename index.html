@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="background-color: rgb(173, 216, 230);">
+    <div class="container" id="resume-form">
+        <h1 class="text-center my-2">Resume Generator</h1>
+        <p class="text-center my-2"> By Aastha Bhatia</p>
+
+        <!-- bootstrap grid- both with take 6-6 out of 12 grids -->
+        <div class="row">
+            <!-- first column -->
+            <div class="col-md-6">
+                <h3>Personal Information & Contact Details</h3>
+                <!-- name -->
+                <div class="form-group">
+                    <label for="nameField">Your Name</label>
+                    <input type="text" 
+                    id="nameField" 
+                    placeholder="Enter Here" 
+                    class="form-control">
+                </div>
+                <!-- contact number -->
+                <div class="form-group my-2">
+                    <label for="contactField">Contact No.</label>
+                    <input type="text" 
+                    id="contactField" 
+                    placeholder="Enter Here" 
+                    class="form-control">
+                </div>
+                <!-- email id -->
+                <div class="form-group my-2">
+                    <label for="emailField">Email Id</label>
+                    <input type="text" 
+                    id="emailField" 
+                    placeholder="Enter Here" 
+                    class="form-control">
+                </div>
+                <!-- address -->
+                <div class="form-group my-2">
+                    <label for="addressField">Address</label>
+                    <textarea
+                    id="addressField" 
+                    placeholder="Enter Here" 
+                    class="form-control"
+                    ></textarea>  
+                </div>
+                <!-- photo -->
+                <div class="form-group mt-3">
+                    <label for="">Select your photo</label>
+                    <input id="imageField" type="file" class="form-control">
+
+                </div>
+                <!-- professional links -->
+                <p class="text-secondary my-3">Professional Links</p>
+                <div class="form-group my-2">
+                    <label for="linkedinField">LinkedIn Profile</label>
+                    <input type="text" 
+                    id="linkedinField" 
+                    placeholder="Enter URL Here" 
+                    class="form-control">
+                </div>
+                <div class="form-group my-2">
+                    <label for="githubField">GitHub Profile</label>
+                    <input type="text" 
+                    id="githubField" 
+                    placeholder="Enter URL Here" 
+                    class="form-control">
+                </div>
+                <div class="form-group my-2">
+                    <label for="otherField">Other Profiles</label>
+                    <input type="text" 
+                    id="otherField" 
+                    placeholder="Enter URL Here" 
+                    class="form-control">
+                </div>
+                <!-- hobbies -->
+                <p class="text-secondary my-3" id="hobbies">Hobbies</p>
+                <div class="form-group my-2" id="hobbiesContainer">
+                    <input type="text" 
+                    id="hobbiesField" 
+                    placeholder="Enter Here" 
+                    class="form-control">
+                    <!-- new textarea will be formed here on clicking the button -->
+                    <div class="container text-center mt-2" id="hobbiesAddButton">
+                        <button onclick="addNewHobbiesField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- second column -->
+            <div class="col-md-6">
+                <h3>Experience, Education & Projects</h3>
+                <!-- summary -->
+                <div class="form-group mt-1">
+                    <label for="educationField"> Professional Summary</label>
+                    <textarea
+                    id="summaryField" 
+                    placeholder="Enter Here" 
+                    class="form-control smField"
+                    ></textarea>  
+                <!-- education -->
+                <div class="form-group mt-1" id="ed">
+                    <label for="educationField">Education</label>
+                    <textarea
+                    placeholder="Enter Here" 
+                    class="form-control edField"
+                    ></textarea>  
+                    <!-- new textarea will be formed here on clicking the button -->
+                    <div class="container text-center mt-2" id="edAddButton">
+                        <button onclick="addNewEducationField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <!-- Skills-->
+                <div class="form-group mt-1" id="sk">
+                    <label for="projectsField">Skills</label>
+                    <textarea
+                    id="skillsField" 
+                    placeholder="Enter Here" 
+                    class="form-control skField"
+                    ></textarea>  
+                    <!-- new textarea will be formed here on clicking the button -->
+                    <div class="container text-center mt-2" id="skAddButton">
+                        <button onclick="addNewSkillsField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <!-- experience -->
+                <div class="form-group mt-1" id="ex">
+                    <label for="experienceField">Experience</label>
+                    <textarea
+                    id="experienceField" 
+                    placeholder="Enter Here" 
+                    class="form-control exField"
+                    ></textarea>  
+                    <!-- new textarea will be formed here on clicking the button -->
+                    <div class="container text-center mt-2" id="exAddButton">
+                        <button onclick="addNewExperienceField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <!-- projects -->
+                <div class="form-group mt-1" id="pj">
+                    <label for="projectsField">Projects</label>
+                    <textarea
+                    id="projectsField" 
+                    placeholder="Enter Here" 
+                    class="form-control pjField"
+                    ></textarea>  
+                    <!-- new textarea will be formed here on clicking the button -->
+                    <div class="container text-center mt-2" id="pjAddButton">
+                        <button onclick="addNewProjectsField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <!-- Achievements -->
+                <div class="form-group mt-1" id="ac">
+                    <label for="AchievementsField">Achievements</label>
+                    <textarea
+                    id="achievementsField" 
+                    placeholder="Enter Here" 
+                    class="form-control acField"
+                    ></textarea>  
+                    <!-- new textarea will be formed here on clicking the button -->
+                    <div class="container text-center mt-2" id="acAddButton">
+                        <button onclick="addNewAchievementsField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <!-- Certificates -->
+                <div class="form-group mt-1" id="ce">
+                    <label for="certificatesField">Certifications & Qualifications</label>
+                    <textarea
+                    id="certificatesField" 
+                    placeholder="Enter Here" 
+                    class="form-control certificatesField"
+                    ></textarea>  
+                    <!-- new textarea will be formed here on clicking the button -->
+                    <div class="container text-center mt-1" id="ceAddButton">
+                        <button onclick="addNewCertificatesField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center my-4">
+            <button onclick="generateresume()" class="btn btn-primary btn-lg">Generate Resume</button>
+        </div>
+    </div>
+    </div>
+    <!-- second section of our code- cv template -->
+     <div class="container">
+        <div class="container" id="resume-template">
+            <div class="row">
+                <!-- first column -->
+                <div class="col-md-4 text-center py-3 background">
+                    <img src="noprofilepic.jpg" 
+                    alt=""
+                    id="myimg"
+                    class="img-fluid myimg"
+                    >
+                <div class="container mt-3">
+                    <p id="nameT">Aastha Bhatia</p>
+                    <p id="contactT">+91 9878793240</p>
+                    <p id="emailT">aasthabhatia.er@gmail.com</p>
+                    <p id="addressT">705-B,Harmilap Nagar, Phase-1, Baltana</p>
+                    <hr>
+                    <label for="linkedinT githubT otherT">Professional Links</label>
+                    <p><a id="linkedinT" href="#1">https://www.linkedin.com/aasthabhatia-er</a></p>
+                    <p><a id="githubT" href="#1">https://www.github.com/aastha-bhatia</a></p>
+                    <p><a id="otherT" href="#1">https://www.leetcode.com/aasthabhatia</a></p>
+                    <hr>
+                    <label for="hobbiesT">Hobbies</label>
+                    <p id="hobbiesT">Hobbies</p>
+                </div>
+                </div>
+                <!-- second column -->
+                <div class="col-md-8 py-5">
+                    <h1 id="nameT2" class="text-center" style="font-weight: 500">Aastha Bhatia</h1>
+                    <!-- professional summary card -->
+                     <div class="card mt-4">
+                        <div class="card-header background">
+                            <h5>Professional Summary</h5>
+                        </div>
+                        <div class="card-body">
+                            <p id="summaryT">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consectetur esse facere dicta ad eaque provident minima alias rerum officia cum accusamus repellat nostrum earum ut, doloremque, laborum animi. Quisquam eius ut nobis nulla vitae voluptatem esse in laboriosam! Cumque ex repellat consequuntur ipsum iste maiores consectetur labore ullam nostrum?
+                            </p>
+                        </div>
+                     </div>
+                     <!-- education -->
+                     <div class="card mt-4">
+                        <div class="card-header background">
+                            <h5>Education</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul id="educationT">
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                     <!-- skills -->
+                     <div class="card mt-4">
+                        <div class="card-header background">
+                            <h5>Skills</h5>
+                        </div>
+                        <div class="card-body"> 
+                            <ul id="skillsT">
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                     <!-- experience -->
+                     <div class="card mt-4">
+                        <div class="card-header background">
+                            <h5>Experience</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul id="experienceT">
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                     <!-- projects -->
+                     <div class="card mt-4">
+                        <div class="card-header background">
+                            <h5>Projects</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul id="projectsT">
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                     <!-- achievements -->
+                     <div class="card mt-4">
+                        <div class="card-header background">
+                            <h5>Achievements</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul id="achievementsT">
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                     <!-- certificates -->
+                     <div class="card mt-4">
+                        <div class="card-header background">
+                            <h5>Certifications & Qualifications</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul id="certificatesT">
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, est.
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                     <div class="container mt-3 text-center">
+                        <button onclick="printresume()" class="btn btn-primary">Print Resume</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

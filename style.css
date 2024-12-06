@@ -1,0 +1,17 @@
+#resume-form {
+    display: block;
+}
+#resume-template {
+    display: none;
+}
+.myimg{
+    border-radius: 50%;
+    width: 200px;
+}
+.background{
+    background-color: rgb(173, 216, 230) !important;
+}
+#achievementsT{
+    height: auto;
+    overflow: visible;
+} 
