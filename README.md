@@ -96,7 +96,7 @@ Contributions to this project are welcome! If you have ideas for new features, i
 2. **Clone Your Fork**  
    Clone your forked repository:
    \`\`\`bash
-   git clone https://github.com/your-username/Resume-Builder.git
+      git clone https://github.com/your-username/Resume-Builder.git
    \`\`\`
 
 3. **Create a Branch**  
