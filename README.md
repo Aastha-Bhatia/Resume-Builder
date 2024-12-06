@@ -11,9 +11,8 @@ This project is perfect for individuals who want to save time and create well-st
 ## Preview
 
 Here’s a quick preview of how the application looks and functions:  
-![Resume Builder Screenshot](path/to/your/screenshot.png)  
-*(Replace this with an actual screenshot of your application)*
-
+![Resume Builder Screenshot](screenshot1.png)  
+![Resume Builder Screenshot](screenshot2.png)  
 ---
 
 ## Key Features
