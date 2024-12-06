@@ -1,3 +1,4 @@
+cat << EOF > README.md
 # Resume Builder
 
 ## About the Project
@@ -8,18 +9,15 @@ This project is perfect for individuals who want to save time and create well-st
 
 ---
 
-## Preview
-
-Here’s a quick preview of how the application looks and functions:  
-![Resume Builder Screenshot](screenshot1.png)  
-![Resume Builder Screenshot](screenshot2.png)  
----
-
 ## Key Features
 
 ### User-Friendly Interface
 - A clean and responsive design ensures ease of use for everyone.
 - Interactive fields guide users step-by-step in building their resume.
+
+### Responsive Design
+- Fully responsive and works seamlessly across all screen sizes, from desktops to mobile devices.
+- Ensures an optimal user experience, regardless of the device used.
 
 ### Customizable Resume Templates
 - Users can choose from different pre-designed templates to match their preferences.
@@ -47,8 +45,9 @@ Here’s a quick preview of how the application looks and functions:
 
 - **Frontend**: HTML, CSS, JavaScript
 - **File Handling**: JavaScript for image uploads and data manipulation.
-- **Design**: CSS for styling and responsive design.
+- **Design Framework**: Bootstrap for responsive design and layout.
 - **Dynamic Features**: JavaScript for interactivity and form validation.
+- **Styling**: CSS for additional customizations and visual improvements.
 
 ---
 
@@ -78,6 +77,14 @@ git clone https://github.com/Aastha-Bhatia/Resume-Builder.git
 
 ### Open in Browser
 Navigate to the project folder and open the \`index.html\` file in your preferred browser to start using the application.
+
+---
+
+## Preview
+
+Here’s a quick preview of how the application looks and functions:  
+![Resume Builder Screenshot](path/to/your/screenshot.png)  
+*(Replace this with an actual screenshot of your application)*
 
 ---
 
@@ -131,3 +138,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Created by [Aastha Bhatia](https://github.com/Aastha-Bhatia). If you have any questions or suggestions, feel free to reach out via GitHub or open an issue in this repository.
 
 ---
+EOF
