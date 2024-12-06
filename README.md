@@ -6,6 +6,13 @@ The **Resume Builder** is a modern and dynamic web application designed to simpl
 
 This project is perfect for individuals who want to save time and create well-structured resumes without requiring design skills or technical expertise. Whether you're a student, a fresh graduate, or a professional, the Resume Builder is here to assist you in making a strong first impression.
 
+--- 
+
+## Preview
+
+Here’s a quick preview of how the application looks and functions:  
+![Resume Builder Screenshot](path/to/your/screenshot.png)  
+![Resume Builder Screenshot](path/to/your/screenshot1.png)  
 ---
 
 ## Key Features
@@ -79,14 +86,6 @@ Navigate to the project folder and open the \`index.html\` file in your preferre
 
 ---
 
-## Preview
-
-Here’s a quick preview of how the application looks and functions:  
-![Resume Builder Screenshot](path/to/your/screenshot.png)  
-*(Replace this with an actual screenshot of your application)*
-
----
-
 ## Contributions
 
 Contributions to this project are welcome! If you have ideas for new features, improvements, or bug fixes, follow these steps:
@@ -137,4 +136,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Created by [Aastha Bhatia](https://github.com/Aastha-Bhatia). If you have any questions or suggestions, feel free to reach out via GitHub or open an issue in this repository.
 
 ---
-EOF
