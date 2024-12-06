@@ -11,13 +11,13 @@ This project is perfect for individuals who want to save time and create well-st
 ## Preview
 
 Here’s a quick preview of how the application looks and functions:  
-![Resume Builder Screenshot](screenshot.png)  
-![Resume Builder Screenshot](screenshot1.png)  
-![Resume Builder Screenshot](screenshot2.png)
-![Resume Builder Screenshot](screenshot3.png)
-![Resume Builder Screenshot](screenshot4.png)
-![Resume Builder Screenshot](screenshot5.png)
-![Resume Builder Screenshot](screenshot6.png)
+![Resume Builder Screenshot](Screenshot.png)  
+![Resume Builder Screenshot](Screenshot1.png)  
+![Resume Builder Screenshot](Screenshot2.png)
+![Resume Builder Screenshot](Screenshot3.png)
+![Resume Builder Screenshot](Screenshot4.png)
+![Resume Builder Screenshot](Screenshot5.png)
+![Resume Builder Screenshot](Screenshot6.png)
 ---
 
 ## Key Features
