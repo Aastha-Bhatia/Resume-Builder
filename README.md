@@ -1,4 +1,3 @@
-cat << EOF > README.md
 # Resume Builder
 
 ## About the Project
