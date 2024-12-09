@@ -235,5 +235,10 @@ function generateresume(){
 }
 function printresume(){
     // to generate pdf
+    if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+        // Show a warning for mobile users
+        alert("Printing is only supported in desktop browsers. Please switch to a desktop for better functionality.");
+        return;
+    }
     window.print();
 }
