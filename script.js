@@ -240,7 +240,5 @@ function printresume(){
         alert("Printing is only supported in desktop browsers. Please switch to a desktop for better functionality.");
         return;
     }
-    let printButton = document.getElementById('printResumeButton');
-    printButton.style.display = 'none';
     window.print();
 }
