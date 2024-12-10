@@ -240,5 +240,8 @@ function printresume(){
         alert("Printing is only supported in desktop browsers. Please switch to a desktop for better functionality.");
         return;
     }
+    #btnbtnbtn{
+    display: none;
+  }
     window.print();
 }
