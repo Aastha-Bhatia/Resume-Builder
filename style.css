@@ -15,3 +15,8 @@
     height: auto;
     overflow: visible;
 } 
+@media print {
+    #printResumeButton{
+        display: none;
+    }
+}
